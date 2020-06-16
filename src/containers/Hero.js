@@ -1,40 +1,53 @@
 import React, {Component} from 'react';
+import ButtonLink from './ButtonLink';
 
 export default class Hero extends Component {
-  render() {
+
+    render() {
+
     return (
       <div className="jumbotron text-center" style={{'marginTop': '-40px'}}>
-        <h2 className="title">
-          Welcome to your &lt;
-          <span className="text-blue">form</span>
-          .
-          <span className="text-green">io</span>
-          &gt; application!
-        </h2>
-        <h3>
-          using
-          <img alt="React" src="https://cdn.worldvectorlogo.com/logos/react.svg" className="hero-image" width="100" />
-          React
-        </h3>
-        <div className="row">
-          <div className="col-sm-12 col-sm-offset-3 text-center">
+            <h2 className="title">
+            ISCRIZIONI Colonie estive 2020
+            <br/>
+            <span className="text-blue">C’entro Anch’io – Comunità Murialdo</span>
+            </h2>
+            <div className="row mt-50">
+          <div className="col-sm-12 col-sm-offset-3 text-justify">
             <p className="lead">
-              You can easily embed your Forms and Resources into this application using.
+            Attraverso questo modulo è possibile effettuare on-line la prenotazione alle colonie estive del C’entro Anch’io della Comunità Murialdo in collaborazione con il Comune di Rovereto. Una volta cliccato su -Invia- riceverete sulla email indicata la ricevuta dell'avvenuta prenotazione.
             </p>
-            <div>
-              <pre><code>{'<Form src="https://examples.form.io/example" />'}</code></pre>
-            </div>
-            <p className="lead">Need Help?</p>
+            <p className="lead">Scarica QUI il dettaglio delle proposte.</p>
+          </div>
+
+          <div className="col-sm-12 col-sm-offset-3 text-center">
+            <p className="lead">Costi: 30 euro a settimana</p>
+            <p className="lead">Hai bisogno di aiuto per l'iscrizione?</p>
             <ul className="list-inline">
               <li>
-                <a className="btn btn-lg btn-success" target="_blank" rel="noopener noreferrer" href="https://github.com/formio/react-formio">Embedding</a>
+                Chiama al <a href="tel:0464-412886">0464-412886</a>
               </li>
               <li>
-                <a className="btn btn-lg btn-success" target="_blank" rel="noopener noreferrer" href="http://help.form.io">Documentation</a>
+                Scrivici a <a target="_blank" rel="noopener noreferrer" href="mailto:centroanchio@murialdo.taa.it">centroanchio@murialdo.taa.it</a>
               </li>
             </ul>
+              <ButtonLink to="/colonie" className="btn btn-lg btn-success nolist">
+              Fai l'iscrizione
+              </ButtonLink>
           </div>
         </div>
+
+          <div className="row text-center mt-50">
+
+          <div className="col-sm-12 col-sm-offset-3 text-center">
+
+           <p>
+             <img src="https://comunitamurialdo.github.io/iscrizioni/static/stemma_cr.png" height="100px"/>
+             <img src="https://comunitamurialdo.github.io/iscrizioni/static/logo.png" height="100px"/>
+             <img src="https://comunitamurialdo.github.io/iscrizioni/static/logoCA.png" height="100px"/>
+           </p>
+          </div>
+          </div>
       </div>
     );
   }

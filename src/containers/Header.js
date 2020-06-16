@@ -17,10 +17,10 @@ const Header = class extends Component {
     const {auth, logout} = this.props;
 
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            <img className="logo" alt="Form.io" src="https://portal.form.io/images/formio-logo.png" height="25px" />
+            <img className="logo" alt="logo CM" src="https://comunitamurialdo.github.io/iscrizioni/static/logo.png" height="100px" />
           </Link>
           <ul className="nav navbar-nav mr-auto">
             <NavLink exact to="/" role="navigation button" className="nav-link">
@@ -33,26 +33,13 @@ const Header = class extends Component {
               </NavLink>
             ) : null }
             { auth.authenticated ? (
-              <NavLink to="/event" role="navigation link" className="nav-link">
+              <NavLink to="/colonie" role="navigation link" className="nav-link">
                 <i className="fa fa-calendar"></i>&nbsp;
                 Events
               </NavLink>
             ) : null }
           </ul>
-          <ul className="nav navbar-nav ml-auto">
-            { auth.authenticated ? (
-              <li className="nav-item">
-                <span className="nav-link" role="navigation link" onClick={logout}>
-                  <span className="fa fa-sign-out" />&nbsp;
-                  Logout
-                </span>
-              </li>
-            ) : (
-              <NavLink to="/auth" role="navigation link" className="nav-link">
-                Login | Register
-              </NavLink>
-            )}
-          </ul>
+
         </div>
       </nav>
     );
@@ -63,7 +50,7 @@ const mapStateToProps = (state) => {
   return {
     auth: selectRoot('auth', state)
   };
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -72,9 +59,9 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(push(AuthConfig.anonState));
     }
   };
-}
+};
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Header)
+)(Header);
