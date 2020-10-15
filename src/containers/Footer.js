@@ -5,7 +5,7 @@ export default class Footer extends Component {
     return (
       <footer className="footer">
         <div className="container text-center" style={{padding: '15px'}}>
-          Coded with ♥ by Xavier Torné for Comunità Murialdo
+          Coded with ♥ by <a href="mailto:xavitorne@gmail.com">Xavier Torné</a> for Comunità Murialdo
         </div>
       </footer>
     );

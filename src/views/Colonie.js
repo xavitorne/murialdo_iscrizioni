@@ -31,9 +31,9 @@ export default class Colonie extends Component {
                     <div>
                     <Form src="https://ivzftkhgysqjtha.form.io/iscrizioni"  onSubmit={() => this.openModal()} />
                     <Modal visible={this.state.visible} width="400" height="300" effect="fadeInUp" onClickAway={() => this.closeModal()}>
-                    <div>
+                    <div className="p-5">
                         <h1>Richiesta inviata</h1>
-                        <p className="lead">Appena si conferma l'iscrizione ti manderemo una mail, grazie!</p>
+                        <p className="lead">Verrete contattati dall'equipe educativa per la conferma o meno dell'iscrizione.</p>
                         <a href="javascript:void(0);" onClick={() => this.closeModal()}>Chiudi</a>
                     </div>
                 </Modal>

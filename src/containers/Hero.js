@@ -17,7 +17,7 @@ export default class Hero extends Component {
             <p className="lead">
             Attraverso questo modulo è possibile effettuare on-line la prenotazione alle colonie estive del C’entro Anch’io della Comunità Murialdo in collaborazione con il Comune di Rovereto. Una volta cliccato su -Invia- riceverete sulla email indicata la ricevuta dell'avvenuta prenotazione.
             </p>
-            <p className="lead">Scarica QUI il dettaglio delle proposte.</p>
+            <p className="lead">Scarica <a href="https://comunitamurialdo.github.io/iscrizioni/static/RecapEstate2020.pdf">QUI</a> il dettaglio delle proposte.</p>
           </div>
 
           <div className="col-sm-12 col-sm-offset-3 text-center">
